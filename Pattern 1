@@ -1,0 +1,107 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    for(int i=5;i>=1;i--)
+    {
+        for(int j=1;j<=i;j++)
+        {
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+O/P:
+12345
+1234
+123
+12
+1
+
+
+#Program 2
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    for(int i=5;i>=1;i--)
+    {
+        for(int j=1;j<=i;j++)
+        {
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+Output:
+55555
+4444
+333
+22
+1
+
+Program 3
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("enter oa number");
+    scanf("%d",&n);
+    // Write C code here
+    for(int i=1;i<=n;i++)
+    {
+        for(int j=i;j>=1;j--)
+        {
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+O/P:
+enter oa number10
+1
+22
+333
+4444
+55555
+666666
+7777777
+88888888
+999999999
+10101010101010101010
+
+Program 4:
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("enter oa number");
+    scanf("%d",&n);
+    // Write C code here
+    for(int i=1;i<=n;i++)
+    {
+        for(int j=i;j>=1;j--)
+        {
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+    return 0;
+    
+    O/p
+    enter oa number5
+1
+21
+321
+4321
+54321
+
+}
