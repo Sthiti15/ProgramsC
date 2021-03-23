@@ -1,0 +1,42 @@
+//reverse program
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int n,rev=0;
+    printf("enter a number");
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        rev= rev*10;
+        rev= rev + n%10;
+        n= n/10;
+    }
+    printf("Reverse of enterd number is %d", rev);
+    
+    return 0;
+}
+o/p
+enter a number6789
+Reverse of enterd number is 9876
+
+// Online C compiler to run C program online(count number)
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int n,count=0;
+    printf("enter a number");
+    scanf("%d",&n);
+    while(n)
+    {
+        n= n/10;
+        count++;
+    }
+    printf("total digits %d", count);
+    
+    return 0;
+}
+O/p:
+enter a number989653568
+total digits 9
