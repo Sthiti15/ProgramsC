@@ -1,0 +1,41 @@
+//series:
+#include <stdio.h>
+
+int main()
+{
+    // Write C code here
+    int r,val=7,m=2,n=3;
+    scanf("%d",&r);
+    for(int i=1;i<=r;i++)
+    {
+        printf("%d ",val);
+        val=val+(m*n);
+        m++;
+        n++;
+    }
+    
+    return 0;
+}
+O/P:
+5
+7 13 25 45 75 
+
+//function
+#include <stdio.h>
+
+void myfunction() //function defenation
+{
+    printf("hi,I'm user-defined function");
+}
+
+int main()
+{
+    // Write C code here
+    printf("Hello from main func \n");
+    myfunction();//function calling
+    
+    return 0;
+}
+O/P
+Hello from main func 
+hi,I'm user-defined function
