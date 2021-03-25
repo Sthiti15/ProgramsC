@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+   char string[100];
+   int c = 0, count[26] = {0}, x;
+
+   printf("Enter a string\n");
+   gets(string);
+
+   while (string[c] != '\0') {
+   /** Considering characters from 'a' to 'z' only and ignoring others. */
+
+      if (string[c] >= 'a' && string[c] <= 'z') {
+         x = string[c] - 'a';
+         count[x]++;
+      }
+
+      c++;
+   }
+
+   for (c = 0; c < 26; c++)
+         printf("%c occurs %d times in the string.\n", c + 'a', count[c]);
+
+   return 0;
+}
+
+#include<stdio.h>
+
+int checkAutomorphic(int num)
+{
+    int square = num * num;
+    
+    while (num > 0)
+    {
+        if (num % 10 != square % 10)
+            return 0;
+        
+        // Reduce N and square
+        num = num / 10;
+        square = square / 10;
+    }
+    return 1;
+}
+
+int main()
+{
+    //enter value
+    int num;
+    scanf("%d",&num);
+    
+    //checking condition
+    if(checkAutomorphic(num))
+        printf("Automorphic"); 
+    else
+        printf("Not Automorphic");
+    return 0;
+}
+Output:-
+6
+Automorphic
+
+12
+Not Automorphic
+
+376
+Not Automorphic
