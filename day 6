@@ -1,0 +1,33 @@
+//minmax
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,n,val,min,max=0;
+printf("how many number");
+scanf("%d",&n);
+printf("enter value");
+scanf("%d",&val);
+min=val;
+if(val>=max)
+max=val;
+for(i=0;i<n;i++)
+{
+scanf("%d",&val);
+if(val>max)
+max=val;
+if(val<min)
+min=val;
+}
+printf("%d %d",n,max);
+printf("%d %d",n,min);
+getch();
+}
+O/P
+3
+53
+1
+9
+5, 53
+5, 1
